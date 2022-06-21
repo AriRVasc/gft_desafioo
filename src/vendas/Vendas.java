@@ -10,13 +10,14 @@ public class Vendas {
 	• O valor total das compras a prazo
 	• O valor total das compras efetuadas
 	• O valor da soma da primeira prestação das compras a prazo */
+	
 Scanner scan = new Scanner(System.in);
 	int codigo;
-	double compraP=0;
-	double compraV=0;
-	double totalComprasP=0;
-	double totalComprasV=0;
-	double totalComprasE=0;
+	double compraP =0;
+	double compraV =0;
+	double totalComprasP;
+	double totalComprasV;
+	
 	
 	
  	for ( int i=0; i<5; i++) {
@@ -34,7 +35,7 @@ Scanner scan = new Scanner(System.in);
 	
 	
 }
-	totalComprasE= totalComprasV+totalComprasP;
+	 double totalComprasE= totalComprasV+totalComprasP;
 	
 	System.out.println("Total de compras a Vista: "+totalComprasV);
 	System.out.println("Total de compras a Prazo: "+totalComprasP);
