@@ -10,36 +10,38 @@ public class Vendas {
 	• O valor total das compras a prazo
 	• O valor total das compras efetuadas
 	• O valor da soma da primeira prestação das compras a prazo */
+	public static void main(String[] args) {
+		
 	
 Scanner scan = new Scanner(System.in);
-	int codigo;
-	double compraP =0;
-	double compraV =0;
-	double totalComprasP;
-	double totalComprasV;
-	
-	
-	
+	 int codigo ;
+	 double totalComprasV=0;
+	 double totalComprasP=0;
+
  	for ( int i=0; i<5; i++) {
 	System.out.println("Informe 1 para compras a vista e 2 para compras a prazo \n");
 	codigo = scan.nextInt();
 	if (codigo == 1) {
+		
 		System.out.println("Informe o valor da compra");
-		compraV = scan.nextDouble();
+		double compraV = scan.nextDouble();
+		
 		totalComprasV += compraV;
 	} else if (codigo == 2) {
+		double compraV =0;
 		System.out.println("Informe o valor da compra");
-		compraP = scan.nextDouble();
+		double compraP = scan.nextDouble();
+		
 		totalComprasP +=compraP;
 		
 	
 	
 }
-	 double totalComprasE= totalComprasV+totalComprasP;
+	double totalComprasE= totalComprasV+totalComprasP;
 	
 	System.out.println("Total de compras a Vista: "+totalComprasV);
 	System.out.println("Total de compras a Prazo: "+totalComprasP);
 	System.out.println("Total de compras efetuadas: "+totalComprasE);
  	}
-}
+	}
 }
